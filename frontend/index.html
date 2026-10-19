@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home" class="active" data-i18n="nav_home">Home</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button id="langToggle" class="theme-toggle" aria-label="Switch language">العربية</button>
+    </nav>
+
+    <main class="home" id="home">
+        <h1 data-i18n="hero_title">Hi, I'm <span>Elias Ayoub Alqadi</span></h1>
+        <h2 data-i18n="hero_role">Full Stack Developer</h2>
+
+        <p data-i18n="hero_bio">
+            I'm a passionate Full Stack Developer and Software Engineering graduate who enjoys building modern,
+            responsive, and user-friendly web applications. I work with HTML, CSS, JavaScript, Angular, Bootstrap,
+            Node.js, Express.js, and .NET. I'm also developing my skills in database management, RESTful APIs, and
+            problem-solving. I'm always eager to learn new technologies and turn ideas into practical solutions.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">View Projects</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Me</a>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/alqadielias17-netizen" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/elias-alqadi-a28b54368/?isSelfProfile=true" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+    </main>
+
+    <section class="section" id="skills">
+        <h2 class="section-title" data-i18n="skills_title">My <span>Skills</span></h2>
+        <div class="skills-rows">
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Angular</span>
+                <span class="skill">Bootstrap</span>
+            </div>
+
+            <div class="skills">
+                <span class="skill">Node.js</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">.NET</span>
+                <span class="skill">RESTful APIs</span>
+                <span class="skill">Databases</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title" data-i18n="projects_title">My <span>Projects</span></h2>
+        <div class="projects">
+
+            <article class="card">
+                <h3 data-i18n="expense_tracker_title">Expense Tracker</h3>
+                <p data-i18n="expense_tracker_desc">The project solves common expense management challenges by simplifying expense tracking and organization, reducing data entry errors through input validation, and enabling users to filter, sort, and analyze expenses by category and date. It also provides visual summaries of spending and CSV export functionality, helping users monitor their spending habits and manage their personal finances more effectively.</p>
+                <p class="tech">HTML · CSS · JavaScript · Bootstrap</p>
+                <p class="tech">REST API · Node.js · Express.js · PostgreSQL</p>
+                <div class="card-links">
+                    <a href="https://alqadielias17-netizen.github.io/expense-tracker-starter/" target="_blank" rel="noopener noreferrer" data-i18n="link_demo">Live Demo</a>
+                    <a href="https://github.com/alqadielias17-netizen/expense-tracker-starter.git" target="_blank" rel="noopener noreferrer"
+                        data-i18n="link_code">Code</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3 data-i18n="project_two">Project Two</h3>
+                <p data-i18n="project_desc">A short description of what this project does and the problem it solves.</p>
+                <p class="tech">HTML · CSS · JavaScript</p>
+                <div class="card-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="link_demo">Live Demo</a>
+                    <a href="https://github.com/alqadielias17-netizen" target="_blank" rel="noopener noreferrer"
+                        data-i18n="link_code">Code</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3 data-i18n="project_three">Project Three</h3>
+                <p data-i18n="project_desc">A short description of what this project does and the problem it solves.</p>
+                <p class="tech">.NET · SQL</p>
+                <div class="card-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-i18n="link_demo">Live Demo</a>
+                    <a href="https://github.com/alqadielias17-netizen" target="_blank" rel="noopener noreferrer"
+                        data-i18n="link_code">Code</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title" data-i18n="contact_title">Contact <span>Me</span></h2>
+        <p class="subtitle" data-i18n="contact_subtitle">
+            Have a question or a project in mind? Reach out using the details below or fill out the form and I'll get
+            back to you soon.
+        </p>
+
+        <div class="contact-wrapper">
+
+            <aside class="contact-info">
+                <h2 data-i18n="info_title">Contact Information</h2>
+
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <h3 data-i18n="label_email">Email</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alqadielias17@gmail.com" target="_blank"
+                            rel="noopener noreferrer" id="emailLink" dir="ltr">alqadielias17@gmail.com</a>
+                        <button type="button" class="copy-btn" data-copy="emailLink" data-i18n="copy">Copy</button>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <h3 data-i18n="label_phone">Phone</h3>
+                        <a href="tel:+962781254680" id="phoneLink" dir="ltr">+962 781 254 680</a>
+                        <button type="button" class="copy-btn" data-copy="phoneLink" data-i18n="copy">Copy</button>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h3 data-i18n="label_location">Location</h3>
+                        <p data-i18n="location_value">Amman, Jordan</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">💻</span>
+                    <div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/alqadielias17-netizen" target="_blank" rel="noopener noreferrer"
+                            dir="ltr">github.com/alqadielias17-netizen</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🔗</span>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/elias-alqadi-a28b54368/" target="_blank"
+                            rel="noopener noreferrer" data-i18n="footer_name">Elias Ayoub Alqadi</a>
+                    </div>
+                </div>
+            </aside>
+
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name" data-i18n="form_name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" data-i18n-placeholder="ph_name">
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-i18n="label_email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com">
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" data-i18n="form_subject">Subject</label>
+                    <input type="text" id="subject" placeholder="What is this about?"
+                        data-i18n-placeholder="ph_subject">
+                    <small class="error" id="subjectError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" data-i18n="form_message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Write your message here..."
+                        data-i18n-placeholder="ph_message"></textarea>
+                    <small class="error" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn" data-i18n="btn_send">Send Message</button>
+                <p class="success" id="successMsg"></p>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; <span id="year">2026</span> <span data-i18n="footer_name">Elias Ayoub Alqadi</span>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
